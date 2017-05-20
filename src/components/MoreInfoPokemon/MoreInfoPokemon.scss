@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+$color-types: #44dd4a;
+$color-etc: #b97fc9;
+.pokemon__list {
+    font-family: 'Montserrat';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+}
+
+.pokemon__name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    font-size: 20px;
+}
+
+.pokemon__description {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 70%;
+    text-align: center;
+}
+
+.pokemon__subdesc {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.color__types {
+    background: $color-types;
+    color: white;
+    padding: 10px 20px;
+}
+
+.color__etc {
+    color: white;
+    background: $color-etc;
+    padding: 10px 20px;
+}
