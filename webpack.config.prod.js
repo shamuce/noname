@@ -40,7 +40,7 @@ export default {
       favicon: 'src/favicon.ico',
       minify: {
         removeComments: true,
-        collapseWhitespace: true,
+        collapseWhitespace: false,
         removeRedundantAttributes: true,
         useShortDoctype: true,
         removeEmptyAttributes: true,
