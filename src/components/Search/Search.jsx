@@ -8,11 +8,15 @@ class Search extends React.Component {
 		this.filterpokemon = this.filterpokemon.bind(this);
 		this.sortpokemon = this.sortpokemon.bind(this);
 	}
-
+	componentWillReceiveProps() {
+		if (this.props.valueinput) {
+			this.refs.input.value = "";
+		}
+	}
 	filterpokemon(e) {
 		this.sortmethod("Lowest Number First");
 		const value = e.target.value.toLowerCase();
-		const pokeListData = this.props.pokemonlist.data;
+		const pokeListData = this.props.pokemonlist;
 		const filter = pokeListData.filter(user => {
 			return user.name.toLowerCase().includes(value) ? 1 : 0;
 		});
@@ -22,7 +26,7 @@ class Search extends React.Component {
 	}
 
 	sortmethod(method) {
-		let immutableData = [...this.props.pokemonlist.data];
+		let immutableData = [...this.props.pokemonlist];
 		const sorting = immutableData.sort(function(a, b) {
 			switch (method) {
 				case "A-Z":

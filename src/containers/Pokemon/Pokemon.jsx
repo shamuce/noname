@@ -31,8 +31,7 @@ class ModalPokemon extends React.Component {
 				);
 			}
 		});
-		console.log(indexActive);
-		if (indexActive.length <= 0) {
+		if (indexActive.length == 0) {
 			return (
 				<div className={styles.loader}>
 					<div className={styles.dot} />
@@ -46,13 +45,13 @@ class ModalPokemon extends React.Component {
 		if (indexActive[this.props.match.params.id - 1] == undefined) {
 			return (
 				<h1 className={styles.error}>
-					No Found pokemon {this.props.match.params.id}
+					No Found pokemon № {this.props.match.params.id}
 				</h1>
 			);
 		}
 
 		return (
-			<div>
+			<div className={styles.pokemon}>
 				<RouteTransition
 					pathname={this.props.location.pathname}
 					atEnter={{ opacity: 0 }}

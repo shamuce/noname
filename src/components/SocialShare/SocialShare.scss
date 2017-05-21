@@ -1,0 +1,22 @@
+.social {
+    &_list {
+        position: fixed;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &_item {
+        margin: 10px 10px;
+        cursor: pointer;
+        circle {
+            transition: fill .5s ease;
+        }
+        &:hover {
+            circle {
+                fill: black;
+            }
+        }
+    }
+}

@@ -12,8 +12,9 @@ $color-etc: #b97fc9;
 }
 
 .pokemon__top {
+    margin-top: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     width: 600px;
 }
@@ -31,7 +32,7 @@ $color-etc: #b97fc9;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     width: 70%;
     text-align: center;
 }
@@ -55,4 +56,11 @@ $color-etc: #b97fc9;
     color: white;
     background: $color-etc;
     padding: 10px 20px;
+}
+
+.comeback {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: black;
+    color:white;
 }

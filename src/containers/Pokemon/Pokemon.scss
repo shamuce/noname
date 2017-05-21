@@ -1,6 +1,11 @@
 $color-loader: #44dd4a;
 $color-error: #ce4233;
 
+
+.pokemon{
+  margin-top: 50px;
+}
+
 .error {
     width: 450px;
     height: 50px;
@@ -14,10 +19,6 @@ $color-error: #ce4233;
     font-weight: 900;
     color: $color-error;
     letter-spacing: 0.2em;
-}
-
-body {
-  margin: 0;
 }
 .loader {
   position: absolute;

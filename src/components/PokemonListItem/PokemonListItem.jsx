@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { formatId, upperFirstCase } from "../../utils/utils.js";
-
 import styles from "./PokemonListitem.scss";
 
 class PokemonListItem extends React.Component {
   constructor(props) {
     super(props);
   }
-
   render() {
     const { url, id, name, height, weight, types } = this.props;
     const listTypes = types.map((index, i) => {
@@ -20,7 +18,10 @@ class PokemonListItem extends React.Component {
     });
 
     return (
-      <Link className={styles.item} to={`/pokemon/${id}`}>
+      <Link
+        className={styles.item}
+        to={`/pokemon/${id}`}
+      >
         <div className={styles.container}>
           <div className={styles.img_size}>
             <img className={styles.img} src={url} />

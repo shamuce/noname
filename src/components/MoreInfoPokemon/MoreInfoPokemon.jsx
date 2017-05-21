@@ -59,7 +59,7 @@ class MoreInfoPokemon extends React.Component {
 
     return (
       <div className={styles.pokemon__list}>
-        <Link to="/">Exit</Link>
+        <Link className={styles.comeback} to="/">Come back</Link>
         <div className={styles.pokemon__top}>
           <div className={styles.pokemon__name}>
             <img src={url} />
